@@ -7,36 +7,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Home Screen -->
-    <div>
-        <h1>Quiz Game</h1>
-        <p>Test your knowledge!</p>
-        <button>Start Quiz</button>
-    </div>
-
-    <!-- Quiz Screen -->
-    <div>
-        <div>
-            <p>Question <span>1</span> of <span>5</span></p>
-            <p>Score: <span>0</span></p>
+    <div class="container">
+        <!-- Home Screen -->
+        <div class="screen active" id="home">
+            <h1>Quiz Game</h1>
+            <p>Test your knowledge!</p>
+            <button>Start Quiz</button>
         </div>
-        <!-- Questions Container -->
-        <div>
-
+    
+        <!-- Quiz Screen -->
+        <div class="screen" id="quiz">
+            <div class="quiz-header">
+                <p>Question <span>1</span> of <span>5</span></p>
+                <p>Score: <span>0</span></p>
+            </div>
+            <!-- Questions Container -->
+            <div>
+                <p class="question">Question...</p>
+            </div>
+            
+            <!-- Progress Bar -->
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
         </div>
-        
-        <!-- Progress Bar -->
-        <div>
-            <div></div>
+    
+        <!-- Result Screen -->
+        <div class="screen" id="result">
+            <h1>Result</h1>
+            <h2 id="result">100%</h3>
+            <p id="result-message">Congratulations</p>
+            <button>Restart Quiz</button>
         </div>
-    </div>
-
-    <!-- Result Screen -->
-    <div>
-        <h1>Result</h1>
-        <h2>100%</h3>
-        <p>Congratulations</p>
-        <button>Restart Quiz</button>
     </div>
 </body>
 </html>
