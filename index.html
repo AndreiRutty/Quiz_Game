@@ -9,21 +9,22 @@
 <body>
     <div class="container">
         <!-- Home Screen -->
-        <div class="screen active" id="home">
+        <div class="screen " id="home">
             <h1>Quiz Game</h1>
             <p>Test your knowledge!</p>
-            <button>Start Quiz</button>
+            <button id="start-btn">Start Quiz</button>
         </div>
     
         <!-- Quiz Screen -->
-        <div class="screen" id="quiz">
+        <div class="screen active" id="quiz">
             <div class="quiz-header">
                 <p>Question <span>1</span> of <span>5</span></p>
-                <p>Score: <span>0</span></p>
+                <p>Score: <span id="score-count">0</span></p>
             </div>
             <!-- Questions Container -->
             <div>
-                <p class="question">Question...</p>
+                <p id="question-text">Question...</p>
+                <div id="answers-container"></div>
             </div>
             
             <!-- Progress Bar -->
@@ -37,8 +38,9 @@
             <h1>Result</h1>
             <h2 id="result">100%</h3>
             <p id="result-message">Congratulations</p>
-            <button>Restart Quiz</button>
+            <button id="restart-btn">Restart Quiz</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
